@@ -1,0 +1,96 @@
+/*
+Theme Name:    Entrada Child - Modern
+Theme URI:    https://themes.waituk.com/entrada-intro/
+Author:    WAITUK
+Author URI:    https://www.waituk.com
+Template:    entrada
+Description:    Clean, modern, and responsive WordPress adventure theme by WAITUK
+Version:    4.0.7
+License:    Themeforest Regular License
+License URI:   http://themeforest.net/licenses/standard
+Text Domain:    entrada
+Tags: two-columns, three-columns, four-columns, right-sidebar, left-sidebar, full-width-template, custom-background, custom-colors, custom-menu, featured-images, microformats, translation-ready
+*/
+@import "../entrada/dist/styles/modern.css";
+@import "../entrada/woocommerce/woocommerce.css";
+/* = Child Theme customization starts here
+------------------------------------------------------- */
+#header {
+  background: #1f2933;
+  border-bottom: 1px solid #1f2933;
+}
+
+.navbar-default .navbar-nav > li > a > .text {
+  color: #fff;
+  font-weight: 700;
+}
+/* listing page hide banner to push up search list up*/
+.banner.banner-inner {
+  display: none;
+}
+
+/*sidemenu*/
+#menu-activity.menu, .menu-cambodia-locations-container, .information-side ul, .menu-vietnam-locations-container{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#menu-activity.menu li, .menu-cambodia-locations-container li, .information-side li, .vietnam-locations-container li {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.trip-form .holder { vertical-align: top !important; }
+.trip-form .holder:last-child { margin-top: 35px; }
+.jcf-list .jcf-list-content { max-height: 140px !important; }
+.holder .jcf-list-box { width: 100%; }
+.jcf-select.jcf-select-trip {
+    direction: rtl;
+}
+
+@media only screen and (max-width: 992px)
+{
+ .trip-form .holder:last-child { margin-top: 10px; }
+
+}
+
+.jcf-selected { background: rgba( 176, 163, 119, 0.7 ) }
+@media only screen and (min-width: 768px) {
+  .trip-form .holder { width: 33.3333%;  }
+
+  .trip-form { margin-top: 0; }
+}
+
+@media only screen and (max-width: 768px) {
+  .holder .jcf-list-box { width: 100%; }
+  /*.trip-form .holder:last-child { margin-left: 15px; margin-right: -15px; }*/
+}
+
+@media only screen and (max-width: 580px) {
+/*  .jcf-list .jcf-list-content { max-height: 80px !important; }
+*/}
+
+@media only screen and (min-width: 992px) {
+.grid-view-sidebar, .list-view-sidebar {
+    padding-top: 40px;
+    }
+}
+
+.side-list li {
+    margin-bottom: 5px;
+}
+
+.secondside-list {
+    list-style: none;
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.secondside-list li {
+  margin-bottom: 5px;
+}
+.secondside-list li:last-child {
+  margin-bottom: 15px;
+}
+
+
